@@ -97,38 +97,46 @@ header.wp-block-template-part .top-nav {
 	margin-bottom: 0 !important;
 }
 
-.hero-cover .hero-buttons-row {
+.hero-cover .hero-buttons-row,
+.hero-cover .wp-block-buttons,
+.wp-block-cover.hero-cover .wp-block-buttons {
 	display: flex !important;
 	flex-direction: row !important;
 	justify-content: space-between !important;
 	align-items: center !important;
 	width: 100% !important;
-	gap: 48px !important;
-}
-
-.hero-cover .hero-cta,
-.hero-cover p.hero-cta {
-	width: 100% !important;
-	margin-top: auto !important;
+	gap: 30px !important;
+	margin-top: 24px !important;
 	margin-bottom: 0 !important;
 }
 
-.hero-cover .hero-buttons-row a.btn-hero-large,
-.hero-cover .hero-buttons-row a.btn-white-pink,
+.hero-cover .hero-buttons-row > *,
+.hero-cover .wp-block-buttons > .wp-block-button,
+.hero-cover .wp-block-buttons > *,
+.hero-cover .hero-cta {
+	flex: 1 1 0% !important;
+	width: 50% !important;
+	max-width: 50% !important;
+	min-width: 0 !important;
+	box-sizing: border-box !important;
+	margin: 0 !important;
+}
+
+.hero-cover .hero-buttons-row a,
+.hero-cover .wp-block-buttons .wp-block-button__link,
 .hero-cover a.btn-hero-large,
 .hero-cover a.btn-white-pink,
-.hero-cover .hero-cta a,
-.hero-cover .hero-cta .wp-block-button__link {
+.hero-cover .hero-cta a {
 	width: 100% !important;
-	min-width: 100% !important;
+	min-width: 0 !important;
 	max-width: 100% !important;
 	box-sizing: border-box !important;
 	background: #ffffff !important;
 	color: #e95baf !important;
 	border: 3px solid #e95baf !important;
 	border-radius: 4px !important;
-	padding: 18px 24px !important;
-	font-size: clamp(1.2rem, 1.8vw, 1.5rem) !important;
+	padding: 16px 20px !important;
+	font-size: clamp(1.1rem, 1.6vw, 1.4rem) !important;
 	font-weight: 800 !important;
 	text-decoration: none !important;
 	text-transform: uppercase !important;
@@ -139,17 +147,11 @@ header.wp-block-template-part .top-nav {
 	justify-content: center !important;
 }
 
-.hero-cover .hero-buttons-row a.btn-hero-large,
-.hero-cover .hero-buttons-row a.btn-white-pink {
-	flex: 1 1 0% !important;
-	width: 50% !important;
-	max-width: 50% !important;
-}
-
 .hero-cover a.btn-hero-large:hover,
 .hero-cover a.btn-white-pink:hover,
-.hero-cover .hero-cta .wp-block-button__link:hover,
-.hero-cover .hero-cta .wp-block-button__link:focus {
+.hero-cover .hero-cta a:hover,
+.hero-cover .wp-block-buttons .wp-block-button__link:hover,
+.hero-cover .wp-block-buttons .wp-block-button__link:focus {
 	background: #e95baf !important;
 	color: #ffffff !important;
 	border-color: #e95baf !important;
