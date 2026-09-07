@@ -1066,22 +1066,138 @@ p.youtube-channel-cta {
 }
 
 /* --- Costume Rentals: body text size, image crop, bold heading --- */
+.costume-overview-section {
+	padding: 60px 20px !important;
+}
+
+.costume-overview-section h1,
+.costume-overview-section h1.pink-text {
+	font-size: clamp(2.4rem, 4.5vw, 3.2rem) !important;
+	font-weight: 800 !important;
+	color: #E95BAF !important;
+	letter-spacing: 0.05em !important;
+	margin-bottom: 40px !important;
+}
+
+.costume-overview-section .overview-row,
+.costume-overview-section .overview-row-flip {
+	display: grid !important;
+	grid-template-columns: 1fr 1fr !important;
+	gap: 48px !important;
+	align-items: center !important;
+	margin-bottom: 50px !important;
+}
+
+.costume-overview-section .overview-text h2,
+.costume-overview-section .overview-text h2.green-text {
+	color: #38E86B !important;
+	font-size: clamp(1.5rem, 3vw, 2.1rem) !important;
+	font-weight: 800 !important;
+	letter-spacing: 0.04em !important;
+	text-transform: uppercase !important;
+	margin: 0 0 16px !important;
+}
+
 .costume-overview-section .overview-text p,
 .costume-overview-section p {
-	font-size: 1.1rem !important;
-	line-height: 1.7 !important;
+	font-size: 1.05rem !important;
+	line-height: 1.65 !important;
 	color: #333333 !important;
+	margin: 0 !important;
+}
+
+.costume-overview-section .overview-image,
+.overview-image {
+	width: 100% !important;
+	height: 320px !important;
+	max-height: 320px !important;
+	overflow: hidden !important;
+	border-radius: 10px !important;
 }
 
 .costume-overview-section .overview-image img,
 .overview-image img,
 .overview-row-flip .overview-image img {
 	width: 100% !important;
-	height: 100% !important;
-	min-height: 280px !important;
+	height: 320px !important;
+	max-height: 320px !important;
 	object-fit: cover !important;
 	object-position: center top !important;
 	display: block !important;
+	border-radius: 10px !important;
+}
+
+/* Category cards in Costume Rentals */
+.costume-categories-section {
+	background-color: #81D4FA !important;
+	padding: 70px 20px !important;
+}
+
+.costume-categories-section h2 {
+	font-size: clamp(1.8rem, 3.5vw, 2.4rem) !important;
+	font-weight: 800 !important;
+	color: #ffffff !important;
+	letter-spacing: 0.04em !important;
+	margin-bottom: 10px !important;
+}
+
+.costume-categories-section p {
+	font-size: 1rem !important;
+	color: #ffffff !important;
+	margin-bottom: 36px !important;
+}
+
+.costume-categories-grid {
+	display: grid !important;
+	grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+	gap: 28px !important;
+	max-width: 1100px !important;
+	margin: 0 auto 48px !important;
+}
+
+.costume-categories-grid a.category-card {
+	display: flex !important;
+	flex-direction: column !important;
+	background: #ffffff !important;
+	border-radius: 10px !important;
+	overflow: hidden !important;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08) !important;
+	text-decoration: none !important;
+}
+
+.costume-categories-grid a.category-card .category-title {
+	padding: 16px 12px !important;
+	background: #ffffff !important;
+	color: #1e1e1e !important;
+	font-weight: 800 !important;
+	font-size: 0.95rem !important;
+	text-transform: uppercase !important;
+	text-align: center !important;
+}
+
+.costume-categories-grid a.category-card img {
+	width: 100% !important;
+	height: 220px !important;
+	max-height: 220px !important;
+	object-fit: cover !important;
+	object-position: center top !important;
+	display: block !important;
+	background: #ffffff !important;
+	border-radius: 0 !important;
+}
+
+.costume-categories-grid a.category-card .costume-gallery-label {
+	padding: 14px 12px !important;
+	background: #ffffff !important;
+	color: #6A3FC7 !important;
+	font-weight: 800 !important;
+	font-size: 0.85rem !important;
+	text-transform: uppercase !important;
+	text-align: center !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	gap: 8px !important;
 }
 
 .rental-form-cta-section h2,
