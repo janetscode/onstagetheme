@@ -1189,3 +1189,205 @@ p.youtube-channel-cta {
 		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 	}
 }
+
+/* --- COMPREHENSIVE MOBILE RESPONSIVE POLISH (< 768px & < 600px) --- */
+@media (max-width: 768px) {
+	/* Hero Mobile Layout */
+	.hero-cover {
+		padding: 40px 16px !important;
+		min-height: auto !important;
+	}
+
+	.hero-cover .hero-text-row.wp-block-columns {
+		grid-template-columns: 1fr !important;
+		gap: 32px !important;
+		text-align: center !important;
+	}
+
+	.hero-cover .hero-left,
+	.hero-cover .hero-right {
+		align-items: center !important;
+		text-align: center !important;
+	}
+
+	.hero-cover h1.hero-title,
+	.hero-cover h1.wp-block-heading {
+		font-size: clamp(1.8rem, 6.5vw, 2.5rem) !important;
+		text-align: center !important;
+		margin-bottom: 20px !important;
+	}
+
+	.hero-cover .hero-subtitle,
+	.hero-cover h2.hero-subtitle,
+	.hero-cover .hero-desc,
+	.hero-cover p.hero-desc {
+		text-align: center !important;
+	}
+
+	.hero-cover .hero-cta,
+	.hero-cover p.hero-cta {
+		display: flex !important;
+		justify-content: center !important;
+		width: 100% !important;
+		margin-top: 16px !important;
+	}
+
+	.hero-cover a.btn-hero-large,
+	.hero-cover a.btn-white-pink {
+		max-width: 320px !important;
+		margin: 0 auto !important;
+		padding: 16px 24px !important;
+		font-size: 1.15rem !important;
+	}
+
+	/* Card Layout Centering & Stacking */
+	.program-card,
+	.news-card,
+	.shows-upcoming-card,
+	.buy-tickets-row,
+	.scholarship-grid,
+	.overview-row,
+	.overview-row-flip {
+		text-align: center !important;
+	}
+
+	.scholarship-grid,
+	.overview-row,
+	.overview-row-flip {
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 28px !important;
+		align-items: center !important;
+	}
+
+	.scholarship-text,
+	.scholarship-image,
+	.overview-text,
+	.overview-image {
+		width: 100% !important;
+		text-align: center !important;
+	}
+
+	.scholarship-text h2,
+	.overview-text h2 {
+		text-align: center !important;
+	}
+
+	.buy-tickets-section .event-item.buy-tickets-row {
+		grid-template-columns: 1fr !important;
+		text-align: center !important;
+	}
+
+	.buy-tickets-section .event-details.buy-tickets-text {
+		align-items: center !important;
+		text-align: center !important;
+		padding: 24px 20px !important;
+	}
+
+	.buy-tickets-section .buy-tickets-text .wp-block-read-more,
+	.buy-tickets-section .buy-tickets-text a.wp-block-read-more {
+		align-self: center !important;
+		margin-top: 16px !important;
+	}
+
+	.buy-tickets-section .wp-block-post-featured-image.buy-tickets-poster img {
+		max-height: 260px !important;
+		min-height: 200px !important;
+		padding: 12px !important;
+	}
+
+	.home-upcoming-shows .event-item.home-show-card,
+	.home-upcoming-shows .wp-block-group.home-show-card {
+		grid-template-columns: 1fr !important;
+	}
+
+	.home-upcoming-shows .home-show-body,
+	.home-upcoming-shows .event-details.home-show-body {
+		align-items: center !important;
+		text-align: center !important;
+		padding: 24px 20px !important;
+	}
+
+	.home-upcoming-shows .wp-block-read-more,
+	.home-upcoming-shows a.home-show-learn-more {
+		align-self: center !important;
+	}
+
+	.onstage-show-date-line {
+		justify-content: center !important;
+	}
+
+	/* YouTube & Video Grid */
+	.youtube-grid.wp-block-columns,
+	.youtube-grid {
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 20px !important;
+	}
+
+	.youtube-card {
+		width: 100% !important;
+	}
+
+	/* General Section Padding & Headings */
+	.programs,
+	.happening-now,
+	.home-upcoming-shows,
+	.behind-scenes,
+	.scholarship-intro,
+	.policies-section,
+	.eligibility-section,
+	.costume-overview-section,
+	.costume-categories-section,
+	.rental-form-cta-section,
+	.buy-tickets-section {
+		padding: 44px 16px !important;
+	}
+
+	.page-header h1,
+	h1.pink-text,
+	h1.shows-page-title,
+	h1.programs-page-title {
+		font-size: clamp(1.75rem, 5vw, 2.2rem) !important;
+		text-align: center !important;
+	}
+
+	h2,
+	.wp-block-heading {
+		font-size: clamp(1.35rem, 4vw, 1.75rem) !important;
+		text-align: center !important;
+	}
+}
+
+@media (max-width: 600px) {
+	/* 1-Column Stacking for All Grid Elements */
+	.programs-grid.wp-block-columns,
+	.news-grid.wp-block-columns,
+	.show-gallery-grid.wp-block-columns,
+	.costume-categories-grid.wp-block-columns,
+	.past-productions-grid,
+	.past-productions-gallery,
+	.policy-list,
+	.indicators-grid {
+		grid-template-columns: 1fr !important;
+		gap: 16px !important;
+	}
+
+	.program-card {
+		max-width: 400px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.policy-card,
+	.eligibility-card,
+	.app-cta-box {
+		padding: 24px 18px !important;
+		border-radius: 8px !important;
+	}
+
+	.checkbox-label {
+		padding: 12px 14px !important;
+		font-size: 0.95rem !important;
+	}
+}
