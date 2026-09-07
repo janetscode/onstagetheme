@@ -57,7 +57,8 @@ header.wp-block-template-part .top-nav {
 	margin: 0 auto !important;
 }
 
-.hero-cover .hero-text-row.wp-block-columns {
+.hero-cover .hero-text-row.wp-block-columns,
+.wp-block-cover.hero-cover .hero-text-row.wp-block-columns {
 	display: flex !important;
 	flex-direction: row !important;
 	justify-content: space-between !important;
@@ -70,12 +71,17 @@ header.wp-block-template-part .top-nav {
 .hero-cover .hero-left.wp-block-column,
 .hero-cover .hero-right.wp-block-column,
 .hero-cover .wp-block-column.hero-left,
-.hero-cover .wp-block-column.hero-right {
+.hero-cover .wp-block-column.hero-right,
+.hero-cover .hero-left,
+.hero-cover .hero-right {
 	flex: 1 1 0% !important;
 	width: 50% !important;
 	max-width: 50% !important;
 	min-width: 0 !important;
 	box-sizing: border-box !important;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: space-between !important;
 }
 
 .hero-cover h1.hero-title,
@@ -100,14 +106,22 @@ header.wp-block-template-part .top-nav {
 	gap: 48px !important;
 }
 
+.hero-cover .hero-cta,
+.hero-cover p.hero-cta {
+	width: 100% !important;
+	margin-top: auto !important;
+	margin-bottom: 0 !important;
+}
+
 .hero-cover .hero-buttons-row a.btn-hero-large,
 .hero-cover .hero-buttons-row a.btn-white-pink,
 .hero-cover a.btn-hero-large,
-.hero-cover a.btn-white-pink {
-	flex: 1 1 0% !important;
-	width: 50% !important;
-	min-width: 0 !important;
-	max-width: 50% !important;
+.hero-cover a.btn-white-pink,
+.hero-cover .hero-cta a,
+.hero-cover .hero-cta .wp-block-button__link {
+	width: 100% !important;
+	min-width: 100% !important;
+	max-width: 100% !important;
 	box-sizing: border-box !important;
 	background: #ffffff !important;
 	color: #e95baf !important;
@@ -123,6 +137,13 @@ header.wp-block-template-part .top-nav {
 	display: flex !important;
 	align-items: center !important;
 	justify-content: center !important;
+}
+
+.hero-cover .hero-buttons-row a.btn-hero-large,
+.hero-cover .hero-buttons-row a.btn-white-pink {
+	flex: 1 1 0% !important;
+	width: 50% !important;
+	max-width: 50% !important;
 }
 
 .hero-cover a.btn-hero-large:hover,
