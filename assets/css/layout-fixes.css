@@ -47,20 +47,34 @@ header.wp-block-template-part .top-nav {
 }
 
 /* --- Home hero: equal-width CTA bars & large H1 matching reference preview --- */
-.hero-cover .hero-text-row.wp-block-columns {
-	display: grid !important;
-	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-	gap: 48px !important;
-	align-items: stretch !important;
-	width: 100% !important;
-}
-
-.hero-cover .hero-left,
-.hero-cover .hero-right {
+.hero-cover .wp-block-cover__inner-container {
 	display: flex !important;
 	flex-direction: column !important;
 	justify-content: space-between !important;
+	gap: 36px !important;
 	width: 100% !important;
+	max-width: 1200px !important;
+	margin: 0 auto !important;
+}
+
+.hero-cover .hero-text-row.wp-block-columns {
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-between !important;
+	align-items: flex-end !important;
+	width: 100% !important;
+	gap: 48px !important;
+	margin-bottom: 0 !important;
+}
+
+.hero-cover .hero-left.wp-block-column,
+.hero-cover .hero-right.wp-block-column,
+.hero-cover .wp-block-column.hero-left,
+.hero-cover .wp-block-column.hero-right {
+	flex: 1 1 0% !important;
+	width: 50% !important;
+	max-width: 50% !important;
+	min-width: 0 !important;
 	box-sizing: border-box !important;
 }
 
@@ -74,32 +88,26 @@ header.wp-block-template-part .top-nav {
 	letter-spacing: 2px !important;
 	line-height: 1.15 !important;
 	color: #ffffff !important;
-	margin-bottom: 20px !important;
+	margin-bottom: 0 !important;
 }
 
-.hero-cover .hero-cta,
-.hero-cover p.hero-cta,
-.hero-cover .hero-cta .wp-block-button,
-.hero-cover .wp-block-button.btn-hero-large,
-.hero-cover .wp-block-button.btn-white-pink {
-	width: 100% !important;
-	max-width: none !important;
-	background: transparent !important;
-	border: none !important;
-	padding: 0 !important;
-	box-shadow: none !important;
-	margin-top: auto !important;
-}
-
-.hero-cover a.btn-hero-large,
-.hero-cover a.btn-white-pink,
-.hero-cover .hero-cta .wp-block-button__link {
+.hero-cover .hero-buttons-row {
 	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-between !important;
 	align-items: center !important;
-	justify-content: center !important;
 	width: 100% !important;
-	min-width: 100% !important;
-	max-width: 100% !important;
+	gap: 48px !important;
+}
+
+.hero-cover .hero-buttons-row a.btn-hero-large,
+.hero-cover .hero-buttons-row a.btn-white-pink,
+.hero-cover a.btn-hero-large,
+.hero-cover a.btn-white-pink {
+	flex: 1 1 0% !important;
+	width: 50% !important;
+	min-width: 0 !important;
+	max-width: 50% !important;
 	box-sizing: border-box !important;
 	background: #ffffff !important;
 	color: #e95baf !important;
@@ -110,7 +118,11 @@ header.wp-block-template-part .top-nav {
 	font-weight: 800 !important;
 	text-decoration: none !important;
 	text-transform: uppercase !important;
+	text-align: center !important;
 	height: 64px !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
 }
 
 .hero-cover a.btn-hero-large:hover,
@@ -1208,14 +1220,20 @@ p.youtube-channel-cta {
 		min-height: auto !important;
 	}
 
-	.hero-cover .hero-text-row.wp-block-columns {
-		grid-template-columns: 1fr !important;
-		gap: 32px !important;
+	.hero-cover .hero-text-row.wp-block-columns,
+	.hero-cover .hero-buttons-row {
+		flex-direction: column !important;
+		gap: 20px !important;
 		text-align: center !important;
+		width: 100% !important;
 	}
 
 	.hero-cover .hero-left,
-	.hero-cover .hero-right {
+	.hero-cover .hero-right,
+	.hero-cover .hero-left.wp-block-column,
+	.hero-cover .hero-right.wp-block-column {
+		width: 100% !important;
+		max-width: 100% !important;
 		align-items: center !important;
 		text-align: center !important;
 	}
@@ -1234,17 +1252,12 @@ p.youtube-channel-cta {
 		text-align: center !important;
 	}
 
-	.hero-cover .hero-cta,
-	.hero-cover p.hero-cta {
-		display: flex !important;
-		justify-content: center !important;
-		width: 100% !important;
-		margin-top: 16px !important;
-	}
-
+	.hero-cover .hero-buttons-row a.btn-hero-large,
+	.hero-cover .hero-buttons-row a.btn-white-pink,
 	.hero-cover a.btn-hero-large,
 	.hero-cover a.btn-white-pink {
-		max-width: 320px !important;
+		width: 100% !important;
+		max-width: 340px !important;
 		margin: 0 auto !important;
 		padding: 16px 24px !important;
 		font-size: 1.15rem !important;
