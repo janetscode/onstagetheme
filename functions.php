@@ -81,6 +81,13 @@ function onstage_enqueue_assets() {
 		array( 'onstage-style' ),
 		ONSTAGE_VERSION
 	);
+	wp_enqueue_script(
+		'onstage-lightbox',
+		get_theme_file_uri( 'assets/js/lightbox.js' ),
+		array(),
+		ONSTAGE_VERSION,
+		true
+	);
 }
 add_action( 'wp_enqueue_scripts', 'onstage_enqueue_assets' );
 
