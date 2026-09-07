@@ -46,12 +46,13 @@ header.wp-block-template-part .top-nav {
 	padding-bottom: 12px !important;
 }
 
-/* --- Home hero: equal-width CTA bars & tuned H1 --- */
+/* --- Home hero: equal-width CTA bars & large H1 matching reference preview --- */
 .hero-cover .hero-text-row.wp-block-columns {
 	display: grid !important;
 	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-	gap: 48px 56px !important;
+	gap: 48px !important;
 	align-items: stretch !important;
+	width: 100% !important;
 }
 
 .hero-cover .hero-left,
@@ -60,6 +61,7 @@ header.wp-block-template-part .top-nav {
 	flex-direction: column !important;
 	justify-content: space-between !important;
 	width: 100% !important;
+	box-sizing: border-box !important;
 }
 
 .hero-cover h1.hero-title,
@@ -67,8 +69,12 @@ header.wp-block-template-part .top-nav {
 	overflow-wrap: normal !important;
 	word-break: normal !important;
 	hyphens: none !important;
-	font-size: clamp(2.1rem, 3.8vw, 3.2rem) !important;
+	font-size: clamp(2.5rem, 4.5vw, 3.6rem) !important;
+	font-weight: 800 !important;
+	letter-spacing: 2px !important;
 	line-height: 1.15 !important;
+	color: #ffffff !important;
+	margin-bottom: 20px !important;
 }
 
 .hero-cover .hero-cta,
@@ -82,6 +88,7 @@ header.wp-block-template-part .top-nav {
 	border: none !important;
 	padding: 0 !important;
 	box-shadow: none !important;
+	margin-top: auto !important;
 }
 
 .hero-cover a.btn-hero-large,
@@ -91,16 +98,19 @@ header.wp-block-template-part .top-nav {
 	align-items: center !important;
 	justify-content: center !important;
 	width: 100% !important;
-	max-width: none !important;
+	min-width: 100% !important;
+	max-width: 100% !important;
 	box-sizing: border-box !important;
-	background: #fff !important;
+	background: #ffffff !important;
 	color: #e95baf !important;
-	border: 2px solid #e95baf !important;
+	border: 3px solid #e95baf !important;
 	border-radius: 4px !important;
-	padding: 22px 28px !important;
-	font-size: clamp(1.2rem, 1.8vw, 1.55rem) !important;
+	padding: 18px 24px !important;
+	font-size: clamp(1.2rem, 1.8vw, 1.5rem) !important;
 	font-weight: 800 !important;
 	text-decoration: none !important;
+	text-transform: uppercase !important;
+	height: 64px !important;
 }
 
 .hero-cover a.btn-hero-large:hover,
@@ -108,7 +118,7 @@ header.wp-block-template-part .top-nav {
 .hero-cover .hero-cta .wp-block-button__link:hover,
 .hero-cover .hero-cta .wp-block-button__link:focus {
 	background: #e95baf !important;
-	color: #fff !important;
+	color: #ffffff !important;
 	border-color: #e95baf !important;
 }
 

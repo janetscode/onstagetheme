@@ -37,7 +37,7 @@ $studio  = ONSTAGE_STUDIO_URL;
 		<!-- wp:column {"verticalAlignment":"bottom","className":"hero-left"} -->
 		<div class="wp-block-column is-vertically-aligned-bottom hero-left">
 			<!-- wp:heading {"level":1,"className":"hero-title"} -->
-			<h1 class="wp-block-heading hero-title">ON STAGE<br>THEATRICAL<br>PRODUCTIONS, INC</h1>
+			<h1 class="wp-block-heading hero-title">ON STAGE<br>THEATRICAL<br>PRODUCTIONS,<br>INC</h1>
 			<!-- /wp:heading -->
 			<!-- wp:html -->
 			<p class="hero-cta"><a class="btn btn-white-pink btn-hero-large" href="<?php echo esc_url( $tickets ); ?>" target="_blank" rel="noopener noreferrer">Buy Tickets</a></p>
